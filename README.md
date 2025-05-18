@@ -2,7 +2,7 @@
 FZAS is a protective measure to ensure that flipper zero apps (and potentially other code) will not easily be skidded without the consent of the repo owner
 
 ## Usage
-Import utils.h into your program and call the init_card() function within it at some point in your program. The rest is taken care of with no ill effects to any firmware not associated with skidding code.
+Import utils.h into your program and call the init_card() or init_screen() function within it at some point in your program. The rest is taken care of with no ill effects to any firmware not associated with skidding code.
 
 ## Effects
 ### What does FZAS do?
