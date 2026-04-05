@@ -1,12 +1,12 @@
 # Flipper-Zero-Anti-Skid
-FZAS is a protective measure to ensure that flipper zero apps (and potentially other code) will not easily be skidded without the consent of the repo owner
+FZAS is a protective measure to ensure that flipper zero apps (and potentially other code) will not easily be skidded without the consent of the developers.
 
 ## Usage
-Import utils.h into your program and call the init_card() or init_screen() function within it at some point in your program. The rest is taken care of with no ill effects to any firmware not associated with skidding code.
+Import utils.h into your program and call the init_card() function within it at some point in your program. The rest is taken care of with no ill effects to any firmware not associated with the mass skidding of projects without consulting the original developers. 
 
 ## Effects
 ### What does FZAS do?
-FZAS writes a custom message to the first 2gb worth of blocks (assuming 512 byte blocks) to the SD card of the Flipper Zero. The idea is that this will destroy the partition table of the SD card requiring the flipper to be DFU'd and the SD Card to be reformatted before they can be used again.
+FZAS writes a custom message to the first 2gb worth of blocks (assuming 512 byte blocks) to the SD card of the Flipper Zero. The idea is that this will destroy the partition table (as well as most data) of the SD card requiring the flipper to be DFU'd and the SD Card to be reformatted before they can be used again.
 
 This causes no harm to the flipper zero itself, however with enough activations of FZAS it can eventually damage the SD card. Implement at your own risk!
 
